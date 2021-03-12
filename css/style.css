@@ -1,0 +1,281 @@
+@font-face {
+    font-family: "GTFlexa";
+    src: url("../css/font/GT-Flexa-TL-Black.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "NotoSans";
+    src: url("../css/font/NotoSans-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "SourceCodePro";
+    src: url("../css/font/SourceCodePro-ExtraLight.ttf");
+  }
+
+  @font-face {
+    font-family: "YouSheBiaoTiHei";
+    src: url("../css/font/YouSheBiaoTiHei-2.ttf");
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  html {
+    min-height: 80vh;
+    font-family: "GTFlexa";
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+  .background {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background: #ffffff;
+    border: 20px solid transparent;
+    background-image: url("../StartScreen_Images/bgd.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btn {
+    margin: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border-color: #010101;
+    border-width: 1px;
+    height: 50%;
+    width: 60%;
+    padding: 12px;
+    border-radius: 0%;
+    font-size: 4vw;
+    font-family: 'GTFlexa';
+    letter-spacing: 2px;
+    color: #010101;
+    text-decoration: none;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10); */
+    display: block;
+    text-decoration: none;
+
+  }
+
+
+  #footer {
+    background-color: transparent;
+    /* flex: 0 0 50px; */
+    margin-top:0;
+    margin: 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    height: 0.2rem;
+    font-family: "Notosans";
+  }
+
+  .form {
+    background-color: transparent;
+    border-color: #010101;
+    border-width: 1px;
+    height: 60%;
+    width: 100%;
+    /* border: none; */
+    padding: 8px 3rem;
+    font-size: 4vw;
+    font-family: "GTFlexa";
+    text-align: center;
+    margin: auto;
+    display: block;
+
+  }
+
+
+  #TimeProgress {
+    width: 100%;
+
+  }
+
+  #TimeBar {
+    width: 10%;
+    height: 8px;
+    background-color: #010101;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1em;
+    color: #010101;
+    font-family: "NotoSans";
+    border-radius: 20px;
+  }
+
+  #myProgress {
+    background-color: transparent;
+    border-color: #010101;
+    border-width: 1px;
+    border-radius: 20px;
+    width: 90%;
+    padding: 12px;
+    border-radius: 0%;
+    font-size: 4vw;
+    font-family: 'GTFlexa';
+    letter-spacing: 2px;
+    color: #010101;
+    text-decoration: none;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10); */
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    display: block;
+    text-decoration: none;
+  }
+  
+
+  p{
+      font-size: 0.8rem;
+      font-family: "NotoSans";
+      text-align: center;
+      margin-top: 0;
+  }
+
+  .fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    50% {
+        opacity:0;
+      }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+      }
+      50% {
+          opacity:0;
+        }
+      100% {
+        opacity:1;
+      }
+    }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+      }
+      50% {
+          opacity:0;
+        }
+      100% {
+        opacity:1;
+      }
+    }
+  
+  @-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+      }
+      50% {
+          opacity:0;
+        }
+      100% {
+        opacity:1;
+      }
+    }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+      }
+      50% {
+          opacity:0;
+        }
+      100% {
+        opacity:1;
+      }
+    }
+
+.fade-out {
+    animation: fadeOut ease 2s;
+    -webkit-animation: fadeOut ease 2s;
+    -moz-animation: fadeOut ease 2s;
+    -o-animation: fadeOut ease 2s;
+    -ms-animation: fadeOut ease  2s;
+    opacity: 0;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+  }
+}
